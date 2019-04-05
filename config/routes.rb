@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'home/index'
+
+  get 'profile', to: 'users#show'
+  get 'join', to: 'users#new'
 end
